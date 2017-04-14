@@ -1,0 +1,7 @@
+for a n*n matrix
+if we want to save the upper triangular matrix in a one-dimensional array, we need the mapping relation between the original matrix and the one-dimensional array
+if (i,j) 1≤i≤j≤n
+  ∵the index of (i,j) is n+(n-1)+(n-2)+...+(n-i+2) + (j-i)
+                        1   2     3         i-1      i+2
+  n+(n-1)+(n-2)+...+(n-i+2) = [n+(n-i+2)]*(i-1)/2 = (2n-i-2)*(i-1)/2
+  ∴the index of (i,j) is n+(n-1)+(n-2)+...+(n-i+2) + (j-i) = (2n-i-2)*(i-1)/2 + (j-i)
